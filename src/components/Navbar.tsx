@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 const navItems = [
     { path: '#home', label: 'Home' },
     { path: '#projects', label: 'Projects' },
