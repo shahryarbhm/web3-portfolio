@@ -104,16 +104,18 @@ export default function ContactSection() {
 
             <div className="mt-12">
                 <h3 className="text-xl font-bold mb-4 text-center">Connect with me</h3>
-                <div className="flex justify-center gap-4">
-                    {contact.socials.map((social) => (
+                <div className="flex justify-center gap-6">
+                    {contact.socials.map(({ name, url, icon: Icon, label }) => (
                         <a
-                            key={social.name}
-                            href={social.url}
+                            key={name}
+                            href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-600 dark:text-blue-400 hover:underline"
+                            className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
+                            aria-label={label}
+                            title={label}
                         >
-                            {social.name}
+                            <Icon className="w-6 h-6" />
                         </a>
                     ))}
                 </div>
