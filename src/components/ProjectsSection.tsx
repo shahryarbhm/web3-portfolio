@@ -31,13 +31,13 @@ export default function ProjectsSection() {
                         <div className="relative h-full p-6 flex flex-col justify-end text-white">
                             <div className="transform transition-transform duration-300 group-hover:translate-y-0 translate-y-8">
                                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                                
+
                                 <p className="text-gray-100 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     {project.description}
                                 </p>
-                                
+
                                 <div className="mb-4 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    {project.skills.map(({ name, icon: Icon, color }) => (
+                                    {project.skills.map(({ name, icon: Icon }) => (
                                         <div
                                             key={name}
                                             className="flex items-center gap-1 px-3 py-1 rounded-full text-sm bg-white/10 backdrop-blur-sm"

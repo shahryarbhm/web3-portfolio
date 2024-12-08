@@ -20,7 +20,7 @@ export default function ContactSection() {
             await new Promise(resolve => setTimeout(resolve, 1000));
             setStatus('success');
             setFormData({ name: '', email: '', message: '' });
-        } catch (error) {
+        } catch {
             setStatus('error');
         }
     };
