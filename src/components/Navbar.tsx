@@ -5,6 +5,7 @@ import { AiOutlineHome, AiFillHome } from 'react-icons/ai';
 import { GoProject, GoProjectRoadmap } from 'react-icons/go';
 import { RiContactsLine, RiContactsFill } from 'react-icons/ri';
 import { BsBriefcase, BsBriefcaseFill } from 'react-icons/bs';
+import { GiSkills } from 'react-icons/gi';
 
 const navItems = [
   { 
@@ -24,6 +25,12 @@ const navItems = [
     label: 'Projects',
     icon: GoProject,
     activeIcon: GoProjectRoadmap
+  },
+  { 
+    path: '#skills',
+    label: 'Skills',
+    icon: GiSkills,
+    activeIcon: GiSkills
   },
   { 
     path: '#contact', 

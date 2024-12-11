@@ -1,67 +1,56 @@
 import { portfolioConfig } from '@/config/portfolio';
 
 const getColorGradient = (percentage: number) => {
-    // Red for low percentages, yellow for medium, green for high
-    if (percentage < 50) {
-        // Red to Yellow gradient
-        return `linear-gradient(to bottom, 
-      rgba(239, 68, 68, 0.2), 
-      rgba(239, 68, 68, 0.4)
+    return `linear-gradient(to bottom, 
+        rgba(59, 130, 246, ${percentage * 0.003}), 
+        rgba(147, 51, 234, ${percentage * 0.004})
     )`;
-    } else if (percentage < 75) {
-        // Yellow to Light Green gradient
-        return `linear-gradient(to bottom, 
-      rgba(234, 179, 8, 0.2), 
-      rgba(234, 179, 8, 0.4)
-    )`;
-    } else {
-        // Green gradient
-        return `linear-gradient(to bottom, 
-      rgba(34, 197, 94, 0.2), 
-      rgba(34, 197, 94, 0.4)
-    )`;
-    }
 };
 
 export default function SkillsSection() {
     const { skills } = portfolioConfig;
 
+    // Take only the first 13 skills to form a rhombus pattern
+    const rhombusSkills = skills.items.slice(0, 13);
+
     return (
-        <section className="w-full max-w-2xl mx-auto px-4" id="skills">
-            <h2 className="text-2xl font-bold mb-8 text-center">{skills.title}</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
-                {skills.items.map(({ name, icon: Icon, description, percentage = 80 }) => (
-                    <div
-                        key={name}
-                        className="relative flex flex-col items-center gap-2 bg-black/20 backdrop-blur-lg rounded-xl p-6 transition-all hover:scale-105 overflow-hidden group"
-                        title={description}
-                    >
-                        {/* Liquid fill effect */}
-                        <div
-                            className="absolute bottom-0 left-0 w-full transition-all duration-500 ease-out group-hover:opacity-70"
-                            style={{
-                                height: `${percentage}%`,
-                                background: getColorGradient(percentage),
-                                transform: 'translateY(100%)',
-                                animation: 'fillUp 1s ease-out forwards'
-                            }}
-                        />
+        <section className="relative min-h-screen w-full flex items-center justify-center px-2 py-20" id="skills">
+            <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col items-center justify-center">
+                <h2 className="text-4xl md:text-3xl sm:text-2xl font-bold mb-16 text-white/90">Skills</h2>
 
-                        {/* Glass reflection */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
+                <div className="rhombus-grid-container">
+                    <div className="rhombus-grid">
+                        {rhombusSkills.map(({ name, icon: Icon, description, percentage = 80 }, index) => (
+                            <div key={name} className="rhombus-item">
+                                <div className="rhombus-content group">
+                                    <div className="rhombus-inner">
+                                        {/* Liquid fill effect */}
+                                        <div
+                                            className="absolute bottom-0 left-0 w-full transition-all duration-500 ease-out group-hover:opacity-70"
+                                            style={{
+                                                height: `${percentage}%`,
+                                                background: getColorGradient(percentage),
+                                                transform: 'translateY(100%)',
+                                                animation: `fillUp 1s ease-out forwards ${index * 0.1}s`
+                                            }}
+                                        />
 
-                        <Icon className="relative z-10 w-8 h-8 text-gray-200" />
-                        <span className="relative z-10 text-sm">{name}</span>
-                        <span
-                            className={`relative z-10 text-xs ${percentage < 50 ? 'text-red-400' :
-                                    percentage < 75 ? 'text-yellow-400' :
-                                        'text-green-400'
-                                }`}
-                        >
-                            {percentage}%
-                        </span>
+                                        {/* Glass reflection */}
+                                        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
+
+                                        <Icon className="relative z-10 w-6 h-6 text-blue-400" />
+                                        <span className="relative z-10 text-xs text-white text-center mt-1">{name}</span>
+                                        <span
+                                            className="relative z-10 text-xs bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400"
+                                        >
+                                            {percentage}%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </div>
             </div>
         </section>
     );

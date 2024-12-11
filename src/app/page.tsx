@@ -16,10 +16,10 @@ export default function Home() {
       <main className="flex flex-col gap-24 items-center px-4 md:ml-20">
         <HeroSection />
 
-        <div className="w-full max-w-6xl mx-auto space-y-24">
+        <div className="w-full max-w-9xl mx-auto space-y-24">
           <WorkExperienceSection />
-          <SkillsSection />
           <ProjectsSection />
+          <SkillsSection />
           <ContactSection />
         </div>
       </main>
