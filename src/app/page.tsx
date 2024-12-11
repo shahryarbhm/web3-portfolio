@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import SkillsSection from '@/components/SkillsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
+import WorkExperienceSection from '@/components/WorkExperienceSection';
 
 export default function Home() {
   const { siteInfo } = portfolioConfig;
@@ -16,6 +17,7 @@ export default function Home() {
         <HeroSection />
 
         <div className="w-full max-w-6xl mx-auto space-y-24">
+          <WorkExperienceSection />
           <SkillsSection />
           <ProjectsSection />
           <ContactSection />

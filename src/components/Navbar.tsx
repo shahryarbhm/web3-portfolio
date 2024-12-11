@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { AiOutlineHome, AiFillHome } from 'react-icons/ai';
 import { GoProject, GoProjectRoadmap } from 'react-icons/go';
 import { RiContactsLine, RiContactsFill } from 'react-icons/ri';
+import { BsBriefcase, BsBriefcaseFill } from 'react-icons/bs';
 
 const navItems = [
   { 
@@ -11,6 +12,12 @@ const navItems = [
     label: 'Home',
     icon: AiOutlineHome,
     activeIcon: AiFillHome
+  },
+  { 
+    path: '#experience',
+    label: 'Experience',
+    icon: BsBriefcase,
+    activeIcon: BsBriefcaseFill
   },
   { 
     path: '#projects', 

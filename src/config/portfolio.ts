@@ -50,6 +50,17 @@ interface SocialLink {
   label: string;
 }
 
+interface WorkExperience {
+    title: string;
+    company: string;
+    location: string;
+    duration: string;
+    description: string;
+    activities: string[];
+    techniques: string;
+    companyLogo?: string;
+}
+
 export const portfolioConfig = {
   siteInfo: {
     title: "Web3 Developer Portfolio",
@@ -324,5 +335,38 @@ export const portfolioConfig = {
         liveUrl: "https://bridge-protocol-demo.com"
       }
     ] as Project[]
+  },
+  
+  workExperience: {
+    items: [
+      {
+        title: "SENIOR SOFTWARE ENGINEER",
+        company: "Dappd",
+        location: "Remote",
+        duration: "11/2022 - 11/2023",
+        description: "As a senior lead full-stack developer and project manager at Dappd, my primary goal is to deliver innovative decentralized solutions using cutting-edge technologies. I manage a team of developers and handle project communication with stakeholders and clients.",
+        activities: [
+          "Lead a team of developers in building decentralized applications.",
+          "Manage project communication with stakeholders and clients.",
+          "Work on app designs, create and optimize web apps, and assist the team."
+        ],
+        techniques: "NextJS, Flutter, Solidity, NodeJS, Javascript, Docker, GraphQL, Wagmi, EthersJS, React, Typescript, Supabase, Firebase, and Figma.",
+        companyLogo: "/companies/dappd.png" // Add your logo
+      },
+      {
+        title: "WEB3 DEVELOPER",
+        company: "NMKR",
+        location: "Remote",
+        duration: "05/2022 - 08/2022",
+        description: "Contributed to the development of a Milkomeda L2 side chain-based smart contract builder for the Marketplace. This enables users to create their own NFT series without any coding knowledge.",
+        activities: [
+          "Hone skills in blockchain development",
+          "Utilize web3 in NextJS",
+          "Enhance the project's overall structure"
+        ],
+        techniques: "Solidity, NextJS, MobX, Typescript, Web3JS, and Solc",
+        companyLogo: "/companies/nmkr.png" // Add your logo
+      }
+    ] as WorkExperience[]
   }
 }; 
