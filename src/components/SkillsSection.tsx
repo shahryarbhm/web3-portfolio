@@ -20,7 +20,7 @@ export default function SkillsSection() {
 
                 <div className="rhombus-grid-container">
                     <div className="rhombus-grid">
-                        {rhombusSkills.map(({ name, icon: Icon, description, percentage = 80 }, index) => (
+                        {rhombusSkills.map(({ name, icon: Icon, percentage = 80 }, index) => (
                             <div key={name} className="rhombus-item">
                                 <div className="rhombus-content group">
                                     <div className="rhombus-inner">
