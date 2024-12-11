@@ -33,8 +33,8 @@ export default function ContactSection() {
     };
 
     return (
-        <section className="w-full max-w-2xl" id="contact">
-            <h2 className="text-2xl font-bold mb-4 text-center">{contact.title}</h2>
+        <section className="w-full max-w-2xl mx-auto px-4" id="contact">
+            <h2 className="text-2xl font-bold mb-8 text-center">{contact.title}</h2>
             <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
                 {contact.description}
             </p>

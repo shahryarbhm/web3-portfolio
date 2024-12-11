@@ -5,9 +5,9 @@ export default function ProjectsSection() {
     const { projects } = portfolioConfig;
 
     return (
-        <section className="w-full max-w-6xl" id="projects">
-            <h2 className="text-2xl font-bold mb-4 text-center">{projects.title}</h2>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
+        <section className="w-full max-w-6xl mx-auto px-4" id="projects">
+            <h2 className="text-2xl font-bold mb-8 text-center">{projects.title}</h2>
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
                 {projects.description}
             </p>
 

@@ -8,15 +8,25 @@ import {
   SiGithub,
   SiLinkedin,
   SiX,
-  SiFarcaster
+  SiFarcaster,
+  SiPython,
+  SiNodedotjs,
+  SiGraphql,
+  SiDocker,
+  SiRust,
+  SiGo,
+  SiKubernetes,
+  SiWebassembly
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
+import { FaHammer, FaAws } from 'react-icons/fa';
 
 // Type definition for skill items
 interface SkillItem {
   name: string;
   icon: IconType;
   description?: string; // Optional description for tooltips or additional info
+  percentage?: number; // Optional percentage for liquid fill animation
 }
 
 interface ProjectSkill extends SkillItem {
@@ -53,32 +63,98 @@ export const portfolioConfig = {
       {
         name: "Solidity",
         icon: SiSolidity,
-        description: "Smart Contract Development"
+        description: "Smart Contract Development",
+        percentage: 90
       },
       {
         name: "React",
         icon: SiReact,
-        description: "Frontend Development"
+        description: "Frontend Development",
+        percentage: 85
       },
       {
         name: "Next.js",
         icon: SiNextdotjs,
-        description: "Full-stack Framework"
+        description: "Full-stack Framework",
+        percentage: 80
       },
       {
         name: "TypeScript",
         icon: SiTypescript,
-        description: "Type-safe JavaScript"
+        description: "Type-safe JavaScript",
+        percentage: 75
       },
       {
         name: "Ethereum",
         icon: SiEthereum,
-        description: "Blockchain Development"
+        description: "Blockchain Development",
+        percentage: 70
       },
       {
         name: "Web3",
         icon: SiWeb3Dotjs,
-        description: "Blockchain Integration"
+        description: "Blockchain Integration",
+        percentage: 65
+      },
+      {
+        name: "Hardhat",
+        icon: FaHammer,
+        description: "Smart Contract Development Framework",
+        percentage: 85
+      },
+      {
+        name: "Python",
+        icon: SiPython,
+        description: "Backend Development & Scripts",
+        percentage: 75
+      },
+      {
+        name: "Node.js",
+        icon: SiNodedotjs,
+        description: "Backend Development",
+        percentage: 80
+      },
+      {
+        name: "GraphQL",
+        icon: SiGraphql,
+        description: "API Development",
+        percentage: 70
+      },
+      {
+        name: "Docker",
+        icon: SiDocker,
+        description: "Containerization",
+        percentage: 65
+      },
+      {
+        name: "AWS",
+        icon: FaAws,
+        description: "Cloud Infrastructure",
+        percentage: 60
+      },
+      {
+        name: "Rust",
+        icon: SiRust,
+        description: "Systems Programming",
+        percentage: 45
+      },
+      {
+        name: "Go",
+        icon: SiGo,
+        description: "Backend Development",
+        percentage: 40
+      },
+      {
+        name: "Kubernetes",
+        icon: SiKubernetes,
+        description: "Container Orchestration",
+        percentage: 35
+      },
+      {
+        name: "WebAssembly",
+        icon: SiWebassembly,
+        description: "Performance Optimization",
+        percentage: 30
       }
     ] as SkillItem[]
   },

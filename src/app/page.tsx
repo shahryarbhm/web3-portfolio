@@ -7,21 +7,22 @@ import ContactSection from '@/components/ContactSection';
 
 export default function Home() {
   const { siteInfo } = portfolioConfig;
-  
-  return (
-    <div className="grid grid-rows-[60px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div className="row-start-1">
-        <Navbar />
-      </div>
 
-      <main className="flex flex-col gap-24 row-start-2 items-center">
+  return (
+    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+      <Navbar />
+
+      <main className="flex flex-col gap-24 items-center px-4 md:ml-20">
         <HeroSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ContactSection />
+
+        <div className="w-full max-w-6xl mx-auto space-y-24">
+          <SkillsSection />
+          <ProjectsSection />
+          <ContactSection />
+        </div>
       </main>
 
-      <footer className="row-start-3 text-center text-sm text-gray-600 dark:text-gray-400">
+      <footer className="text-center text-sm text-gray-600 dark:text-gray-400 mt-16 mb-24 md:mb-16">
         <p>{siteInfo.copyright}</p>
       </footer>
     </div>
