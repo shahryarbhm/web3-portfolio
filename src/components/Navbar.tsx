@@ -6,6 +6,7 @@ import { GoProject, GoProjectRoadmap } from 'react-icons/go';
 import { RiContactsLine, RiContactsFill } from 'react-icons/ri';
 import { BsBriefcase, BsBriefcaseFill } from 'react-icons/bs';
 import { GiSkills } from 'react-icons/gi';
+import { ConnectButton } from './ConnectButton'
 
 const navItems = [
   { 
@@ -117,6 +118,8 @@ export default function Navbar() {
           </a>
         );
       })}
+      
+      <ConnectButton />
     </nav>
   );
 }
