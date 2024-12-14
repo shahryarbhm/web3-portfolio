@@ -9,32 +9,32 @@ import { GiSkills } from 'react-icons/gi';
 import { ConnectButton } from './ConnectButton'
 
 const navItems = [
-  { 
-    path: '#home', 
+  {
+    path: '#home',
     label: 'Home',
     icon: AiOutlineHome,
     activeIcon: AiFillHome
   },
-  { 
+  {
     path: '#experience',
     label: 'Experience',
     icon: BsBriefcase,
     activeIcon: BsBriefcaseFill
   },
-  { 
-    path: '#projects', 
+  {
+    path: '#projects',
     label: 'Projects',
     icon: GoProject,
     activeIcon: GoProjectRoadmap
   },
-  { 
+  {
     path: '#skills',
     label: 'Skills',
     icon: GiSkills,
     activeIcon: GiSkills
   },
-  { 
-    path: '#contact', 
+  {
+    path: '#contact',
     label: 'Contact',
     icon: RiContactsLine,
     activeIcon: RiContactsFill
@@ -97,7 +97,7 @@ export default function Navbar() {
             ) : (
               <Icon className="w-7 h-7 text-gray-400 group-hover:text-blue-400 transition-colors" />
             )}
-            
+
             {/* Tooltip */}
             <span className="
               absolute left-14 
@@ -118,7 +118,7 @@ export default function Navbar() {
           </a>
         );
       })}
-      
+
       <ConnectButton />
     </nav>
   );
