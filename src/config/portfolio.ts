@@ -20,7 +20,6 @@ import {
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
 import { FaHammer, FaAws } from 'react-icons/fa';
-import { GiToken } from 'react-icons/gi';
 
 // Type definition for skill items
 interface SkillItem {
