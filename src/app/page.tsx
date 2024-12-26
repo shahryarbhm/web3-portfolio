@@ -5,6 +5,7 @@ import SkillsSection from '@/components/SkillsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import WorkExperienceSection from '@/components/WorkExperienceSection';
+import POAPGallery from '@/components/POAPGallery';
 
 export default function Home() {
   const { siteInfo } = portfolioConfig;
@@ -20,8 +21,10 @@ export default function Home() {
           <WorkExperienceSection />
           <ProjectsSection />
           <SkillsSection />
+          <POAPGallery />
           <ContactSection />
         </div>
+
       </main>
 
       <footer className="text-center text-sm text-gray-600 dark:text-gray-400 mt-16 mb-24 md:mb-16">

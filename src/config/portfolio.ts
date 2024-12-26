@@ -1,8 +1,8 @@
-import { 
-  SiSolidity, 
-  SiReact, 
-  SiNextdotjs, 
-  SiTypescript, 
+import {
+  SiSolidity,
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
   SiEthereum,
   SiWeb3Dotjs,
   SiGithub,
@@ -20,6 +20,7 @@ import {
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
 import { FaHammer, FaAws } from 'react-icons/fa';
+import { GiToken } from 'react-icons/gi';
 
 // Type definition for skill items
 interface SkillItem {
@@ -51,14 +52,22 @@ interface SocialLink {
 }
 
 interface WorkExperience {
-    title: string;
-    company: string;
-    location: string;
-    duration: string;
-    description: string;
-    activities: string[];
-    techniques: string;
-    companyLogo?: string;
+  title: string;
+  company: string;
+  location: string;
+  duration: string;
+  description: string;
+  activities: string[];
+  techniques: string;
+  companyLogo?: string;
+}
+
+// Add POAP related interfaces
+interface POAPConfig {
+  enabled: boolean;
+  title: string;
+  description: string;
+  ensAddress: string;
 }
 
 export const portfolioConfig = {
@@ -67,7 +76,7 @@ export const portfolioConfig = {
     description: "Building decentralized applications and smart contracts",
     copyright: "© 2024 Your Name. All rights reserved.",
   },
-  
+
   skills: {
     title: "Skills",
     items: [
@@ -169,7 +178,7 @@ export const portfolioConfig = {
       }
     ] as SkillItem[]
   },
-  
+
   featuredProjects: [
     {
       title: "Project Name",
@@ -179,7 +188,7 @@ export const portfolioConfig = {
     },
     // Add more projects as needed
   ],
-  
+
   contact: {
     title: "Get in Touch",
     description: "Have a question or want to work together? Send me a message!",
@@ -211,7 +220,7 @@ export const portfolioConfig = {
       }
     ] as SocialLink[]
   },
-  
+
   projects: {
     title: "Featured Projects",
     description: "A collection of my Web3 and blockchain projects",
@@ -336,7 +345,7 @@ export const portfolioConfig = {
       }
     ] as Project[]
   },
-  
+
   workExperience: {
     items: [
       {
@@ -368,5 +377,12 @@ export const portfolioConfig = {
         companyLogo: "/companies/nmkr.png" // Add your logo
       }
     ] as WorkExperience[]
-  }
+  },
+
+  poap: {
+    enabled: true,
+    title: "My POAPs",
+    description: "Collection of proof of attendance tokens",
+    ensAddress: process.env.NEXT_PUBLIC_ENS_ADDRESS || '0xshazam.eth'
+  } as POAPConfig
 }; 

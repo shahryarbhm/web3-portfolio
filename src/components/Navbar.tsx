@@ -7,6 +7,7 @@ import { RiContactsLine, RiContactsFill } from 'react-icons/ri';
 import { BsBriefcase, BsBriefcaseFill } from 'react-icons/bs';
 import { GiSkills } from 'react-icons/gi';
 import { ConnectButton } from './ConnectButton'
+import { GiToken } from 'react-icons/gi';
 
 const navItems = [
   {
@@ -32,6 +33,12 @@ const navItems = [
     label: 'Skills',
     icon: GiSkills,
     activeIcon: GiSkills
+  },
+  {
+    path: '#poaps',
+    label: 'POAPs',
+    icon: GiToken,
+    activeIcon: GiToken
   },
   {
     path: '#contact',
