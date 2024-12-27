@@ -71,25 +71,91 @@ interface POAPConfig {
 
 export const portfolioConfig = {
   siteInfo: {
-    title: "Web3 Developer Portfolio",
-    description: "Building decentralized applications and smart contracts",
-    copyright: "© 2024 Your Name. All rights reserved.",
+    title: "0xShazam - Blockchain Developer",
+    description: "Aspiring blockchain developer passionate about building scalable and efficient decentralized solutions.",
+    copyright: "© 2024 0xShazam. All rights reserved.",
+  },
+
+  hero: {
+    title: "0xShazam",
+    subtitle: "Blockchain Developer",
+    description: `Aspiring blockchain developer passionate about building scalable and efficient decentralized
+    solutions. With a strong foundation in low-level programming languages and hands-on
+    experience in frameworks like NestJS, Django, and ExpressJS, I specialize in developing robust back-end
+    infrastructures and ensuring seamless API integrations.`,
+    location: "Klagenfurt, Austria 9020",
+    email: "0xshazam@tutamail.com",
+    phone: "(+43) 667 616 97 258"
   },
 
   skills: {
     title: "Skills",
     items: [
       {
+        name: "TypeScript",
+        icon: SiTypescript,
+        description: "Backend Development",
+        percentage: 90
+      },
+      {
+        name: "Node.js",
+        icon: SiNodedotjs,
+        description: "Server-side Development",
+        percentage: 90
+      },
+      {
         name: "Solidity",
         icon: SiSolidity,
         description: "Smart Contract Development",
-        percentage: 90
+        percentage: 85
+      },
+      {
+        name: "Docker",
+        icon: SiDocker,
+        description: "Containerization",
+        percentage: 85
+      },
+      {
+        name: "GraphQL",
+        icon: SiGraphql,
+        description: "API Development",
+        percentage: 80
+      },
+      {
+        name: "Kubernetes",
+        icon: SiKubernetes,
+        description: "Container Orchestration",
+        percentage: 75
+      },
+      {
+        name: "Rust",
+        icon: SiRust,
+        description: "Systems Programming",
+        percentage: 70
+      },
+      {
+        name: "Go",
+        icon: SiGo,
+        description: "Backend Development",
+        percentage: 70
+      },
+      {
+        name: "Python",
+        icon: SiPython,
+        description: "Scripting & ML",
+        percentage: 85
+      },
+      {
+        name: "Web3.js",
+        icon: SiWeb3Dotjs,
+        description: "Blockchain Integration",
+        percentage: 85
       },
       {
         name: "React",
         icon: SiReact,
         description: "Frontend Development",
-        percentage: 85
+        percentage: 80
       },
       {
         name: "Next.js",
@@ -98,284 +164,168 @@ export const portfolioConfig = {
         percentage: 80
       },
       {
-        name: "TypeScript",
-        icon: SiTypescript,
-        description: "Type-safe JavaScript",
-        percentage: 75
-      },
-      {
-        name: "Ethereum",
-        icon: SiEthereum,
-        description: "Blockchain Development",
-        percentage: 70
-      },
-      {
-        name: "Web3",
-        icon: SiWeb3Dotjs,
-        description: "Blockchain Integration",
-        percentage: 65
-      },
-      {
-        name: "Hardhat",
-        icon: FaHammer,
-        description: "Smart Contract Development Framework",
-        percentage: 85
-      },
-      {
-        name: "Python",
-        icon: SiPython,
-        description: "Backend Development & Scripts",
-        percentage: 75
-      },
-      {
-        name: "Node.js",
-        icon: SiNodedotjs,
-        description: "Backend Development",
-        percentage: 80
-      },
-      {
-        name: "GraphQL",
-        icon: SiGraphql,
-        description: "API Development",
-        percentage: 70
-      },
-      {
-        name: "Docker",
-        icon: SiDocker,
-        description: "Containerization",
-        percentage: 65
-      },
-      {
-        name: "AWS",
-        icon: FaAws,
-        description: "Cloud Infrastructure",
-        percentage: 60
-      },
-      {
-        name: "Rust",
-        icon: SiRust,
-        description: "Systems Programming",
-        percentage: 45
-      },
-      {
-        name: "Go",
-        icon: SiGo,
-        description: "Backend Development",
-        percentage: 40
-      },
-      {
-        name: "Kubernetes",
-        icon: SiKubernetes,
-        description: "Container Orchestration",
-        percentage: 35
-      },
-      {
         name: "WebAssembly",
         icon: SiWebassembly,
-        description: "Performance Optimization",
-        percentage: 30
+        description: "Low-level Web",
+        percentage: 75
       }
     ] as SkillItem[]
-  },
-
-  featuredProjects: [
-    {
-      title: "Project Name",
-      description: "Brief project description goes here",
-      link: "/projects",
-      linkText: "Learn more →"
-    },
-    // Add more projects as needed
-  ],
-
-  contact: {
-    title: "Get in Touch",
-    description: "Have a question or want to work together? Send me a message!",
-    email: "your.email@example.com",
-    socials: [
-      {
-        name: "GitHub",
-        url: "https://github.com/yourusername",
-        icon: SiGithub,
-        label: "Follow me on GitHub"
-      },
-      {
-        name: "LinkedIn",
-        url: "https://linkedin.com/in/yourusername",
-        icon: SiLinkedin,
-        label: "Connect on LinkedIn"
-      },
-      {
-        name: "Twitter",
-        url: "https://x.com/yourusername",
-        icon: SiX,
-        label: "Follow me on X"
-      },
-      {
-        name: "Farcaster",
-        url: "https://warpcast.com/yourusername",
-        icon: SiFarcaster, // You might need to use a custom icon for Farcaster
-        label: "Follow me on Farcaster"
-      }
-    ] as SocialLink[]
-  },
-
-  projects: {
-    title: "Featured Projects",
-    description: "A collection of my Web3 and blockchain projects",
-    items: [
-      {
-        title: "DeFi Protocol",
-        description: "A decentralized finance protocol built with Solidity and React, enabling users to stake, swap, and earn yields on their crypto assets.",
-        coverImage: "https://picsum.photos/seed/defi/800/400",
-        gradient: "bg-gradient-to-b from-blue-500/50 to-purple-500/50",
-        skills: [
-          {
-            name: "Solidity",
-            icon: SiSolidity,
-            description: "Smart Contract Development",
-            color: "#363636"
-          },
-          {
-            name: "React",
-            icon: SiReact,
-            description: "Frontend Development",
-            color: "#61DAFB"
-          },
-          {
-            name: "Web3",
-            icon: SiWeb3Dotjs,
-            description: "Blockchain Integration",
-            color: "#F16822"
-          }
-        ],
-        githubUrl: "https://github.com/yourusername/defi-protocol",
-        liveUrl: "https://defi-protocol.com"
-      },
-      {
-        title: "NFT Marketplace",
-        description: "A fully decentralized NFT marketplace where users can mint, buy, sell, and trade digital collectibles with low gas fees.",
-        coverImage: "https://picsum.photos/seed/nft/800/400",
-        gradient: "bg-gradient-to-b from-pink-500/50 to-purple-500/50",
-        skills: [
-          {
-            name: "Solidity",
-            icon: SiSolidity,
-            description: "Smart Contract Development",
-            color: "#363636"
-          },
-          {
-            name: "Next.js",
-            icon: SiNextdotjs,
-            description: "Full-stack Framework",
-            color: "#000000"
-          },
-          {
-            name: "TypeScript",
-            icon: SiTypescript,
-            description: "Type-safe JavaScript",
-            color: "#3178C6"
-          }
-        ],
-        githubUrl: "https://github.com/yourusername/nft-marketplace",
-        liveUrl: "https://nft-marketplace-demo.com"
-      },
-      {
-        title: "DAO Governance Platform",
-        description: "A decentralized autonomous organization platform with proposal creation, voting mechanisms, and treasury management.",
-        coverImage: "https://picsum.photos/seed/dao/800/400",
-        gradient: "bg-gradient-to-b from-green-500/50 to-blue-500/50",
-        skills: [
-          {
-            name: "Solidity",
-            icon: SiSolidity,
-            description: "Smart Contract Development",
-            color: "#363636"
-          },
-          {
-            name: "TypeScript",
-            icon: SiTypescript,
-            description: "Type-safe JavaScript",
-            color: "#3178C6"
-          },
-          {
-            name: "Ethereum",
-            icon: SiEthereum,
-            description: "Blockchain Development",
-            color: "#3C3C3D"
-          }
-        ],
-        githubUrl: "https://github.com/yourusername/dao-platform",
-        liveUrl: "https://dao-platform-demo.com"
-      },
-      {
-        title: "Cross-Chain Bridge",
-        description: "A bridge solution enabling asset transfers between different blockchain networks with enhanced security features.",
-        coverImage: "https://picsum.photos/seed/bridge/800/400",
-        gradient: "bg-gradient-to-b from-orange-500/50 to-red-500/50",
-        skills: [
-          {
-            name: "Solidity",
-            icon: SiSolidity,
-            description: "Multi-chain Smart Contracts",
-            color: "#363636"
-          },
-          {
-            name: "React",
-            icon: SiReact,
-            description: "Frontend Development",
-            color: "#61DAFB"
-          },
-          {
-            name: "Web3",
-            icon: SiWeb3Dotjs,
-            description: "Multi-chain Integration",
-            color: "#F16822"
-          },
-          {
-            name: "TypeScript",
-            icon: SiTypescript,
-            description: "Type-safe JavaScript",
-            color: "#3178C6"
-          }
-        ],
-        githubUrl: "https://github.com/yourusername/cross-chain-bridge",
-        liveUrl: "https://bridge-protocol-demo.com"
-      }
-    ] as Project[]
   },
 
   workExperience: {
     items: [
       {
-        title: "SENIOR SOFTWARE ENGINEER",
-        company: "Dappd",
+        title: "Back-End Developer",
+        company: "Delinternet",
         location: "Remote",
-        duration: "11/2022 - 11/2023",
-        description: "As a senior lead full-stack developer and project manager at Dappd, my primary goal is to deliver innovative decentralized solutions using cutting-edge technologies. I manage a team of developers and handle project communication with stakeholders and clients.",
+        duration: "2023 - 2024",
+        description: "Developed TypeScript SDKs and back-end services using Node.js and Express.js for seamless API integrations.",
         activities: [
-          "Lead a team of developers in building decentralized applications.",
-          "Manage project communication with stakeholders and clients.",
-          "Work on app designs, create and optimize web apps, and assist the team."
+          "Developed TypeScript SDKs and back-end services using Node.js and Express.js",
+          "Built scalable web applications and integrated SQL databases",
+          "Implemented comprehensive testing strategies, achieving 95% test coverage"
         ],
-        techniques: "NextJS, Flutter, Solidity, NodeJS, Javascript, Docker, GraphQL, Wagmi, EthersJS, React, Typescript, Supabase, Firebase, and Figma.",
-        companyLogo: "/companies/dappd.png" // Add your logo
+        techniques: "TypeScript, Node.js, Express.js, MySQL, PostgreSQL"
       },
       {
-        title: "WEB3 DEVELOPER",
-        company: "NMKR",
+        title: "IoT and Computer Vision Engineer",
+        company: "Offrang",
         location: "Remote",
-        duration: "05/2022 - 08/2022",
-        description: "Contributed to the development of a Milkomeda L2 side chain-based smart contract builder for the Marketplace. This enables users to create their own NFT series without any coding knowledge.",
+        duration: "2022 - 2023",
+        description: "Configured and managed IoT devices using OpenHAB and KNX, enhancing smart home automation.",
         activities: [
-          "Hone skills in blockchain development",
-          "Utilize web3 in NextJS",
-          "Enhance the project's overall structure"
+          "Configured and managed IoT devices",
+          "Dockerized applications for Linux devices",
+          "Conducted Computer Vision research"
         ],
-        techniques: "Solidity, NextJS, MobX, Typescript, Web3JS, and Solc",
-        companyLogo: "/companies/nmkr.png" // Add your logo
+        techniques: "OpenHAB, KNX, Docker, CNN, RCNN, LSTM"
+      },
+      {
+        title: "Full Stack Developer",
+        company: "Emigral",
+        location: "Remote",
+        duration: "2020 - 2022",
+        description: "Developed and maintained robust web applications using NestJS, MongoDB, and React Native.",
+        activities: [
+          "Developed web applications using NestJS and MongoDB",
+          "Designed intuitive interfaces with Figma",
+          "Built reliable queuing system with Redis"
+        ],
+        techniques: "NestJS, MongoDB, React Native, Redis, Figma"
       }
     ] as WorkExperience[]
+  },
+
+  projects: {
+    title: "Featured Projects",
+    description: "Selected Projects (Bounties > 10,000 USDC)",
+    items: [
+      {
+        title: "WenPay - ETHBangkok 2024",
+        description: "Winner of Blockscout prize. NFC-enabled wallet focused on seamless stablecoin transactions, leveraging Web3Auth Kotlin SDK for wallet abstraction and ENS for free address resolution. Integrated Kinto for KYC-compliant transactions.",
+        coverImage: "/projects/wenpay.png",
+        skills: [
+          { name: "Web3Auth", icon: SiEthereum },
+          { name: "ENS", icon: SiEthereum },
+          { name: "Solidity", icon: SiSolidity }
+        ],
+        githubUrl: "https://github.com/yourusername/wenpay"
+      },
+      {
+        title: "Blockademy - ETHSofia 2024",
+        description: "Winner of iExec Prize. A decentralized education platform built with Next.js enabling secure, blockchain-based course content sharing and tamper-proof certifications.",
+        coverImage: "/projects/blockademy.png",
+        skills: [
+          { name: "Next.js", icon: SiNextdotjs },
+          { name: "iExec", icon: SiEthereum },
+          { name: "Web3", icon: SiWeb3Dotjs }
+        ],
+        githubUrl: "https://github.com/yourusername/blockademy"
+      },
+      {
+        title: "Yes, ZKing - ETHRome 2024",
+        description: "Winner of Aztec, ENS, and Crossmint bounties. Anonymous review system using Zero-Knowledge Proofs for privacy-preserving identity verification and secure messaging.",
+        coverImage: "/projects/zking.png",
+        skills: [
+          { name: "ZK-Proofs", icon: SiEthereum },
+          { name: "iExec", icon: SiEthereum },
+          { name: "Web3Mail", icon: SiWeb3Dotjs }
+        ],
+        githubUrl: "https://github.com/yourusername/zking"
+      },
+      {
+        title: "Platano o Plomo - ETH Brussels 2024",
+        description: "Winner of Two Side Track Prizes. Utilized Web3Auth for user onboarding and deployed smart contracts on Arbitrum Sepolia, using Chainlink VRF for randomization.",
+        coverImage: "/projects/platano.png",
+        skills: [
+          { name: "Web3Auth", icon: SiEthereum },
+          { name: "Chainlink", icon: SiEthereum },
+          { name: "React", icon: SiReact }
+        ],
+        githubUrl: "https://github.com/yourusername/platano"
+      },
+      {
+        title: "TelegramHub - ETHOnline 2024",
+        description: "Winner of Sign Protocol, Avail Best Core Tooling, and Build with Avail Prizes. Developed secure, blockchain-based data handling with Avail and Polkadot.js.",
+        coverImage: "/projects/telegramhub.png",
+        skills: [
+          { name: "Polkadot", icon: SiEthereum },
+          { name: "Lit Protocol", icon: SiEthereum },
+          { name: "Avail", icon: SiWeb3Dotjs }
+        ],
+        githubUrl: "https://github.com/yourusername/telegramhub"
+      }
+    ] as Project[]
+  },
+
+  contact: {
+    title: "Get in Touch",
+    description: "Have a question or want to work together?",
+    email: "0xshazam@tutamail.com",
+    socials: [
+      {
+        name: "GitHub",
+        url: "https://github.com/shahryarbhm",
+        icon: SiGithub,
+        label: "Follow me on GitHub"
+      },
+      {
+        name: "LinkedIn",
+        url: "https://linkedin.com/in/shahryarbhm",
+        icon: SiLinkedin,
+        label: "Connect on LinkedIn"
+      },
+      {
+        name: "Twitter",
+        url: "https://x.com/0xshazam",
+        icon: SiX,
+        label: "Follow me on X"
+      }
+    ] as SocialLink[]
+  },
+
+  education: {
+    items: [
+      {
+        institution: "University Of Klagenfurt, Austria",
+        degree: "M.Sc. in Informatics",
+        duration: "2024 - 2026"
+      },
+      {
+        institution: "University Of Shiraz, Iran",
+        degree: "B.Sc. in Computer Engineering",
+        duration: "2024 - 2026"
+      }
+    ]
+  },
+
+  certifications: {
+    items: [
+      "EVM Bootcamp 2024 by Encode",
+      "Advanced Foundry By Cyfrin",
+      "Solidity Smart Contract Development by Cyfrin",
+      "Fundamentals of Computer Networks and Cybersecurity"
+    ]
   },
 
   poap: {
