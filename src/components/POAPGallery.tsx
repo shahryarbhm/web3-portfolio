@@ -65,8 +65,8 @@ export default function POAPGallery() {
     }
 
     return (
-        <section className="w-full max-w-2xl mx-auto px-4" id="poaps">
-            <div className="w-full p-6">
+        <section className="w-full max-w-auto mx-auto px-4" id="poaps">
+            <div className="w-full p-12">
                 <div className="flex flex-col items-center mb-8">
                     <h2 className="text-2xl font-bold">{title}</h2>
                     <p className="text-gray-400 mt-2">{description}</p>

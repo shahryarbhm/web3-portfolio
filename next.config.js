@@ -9,6 +9,10 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
+    domains: [
+      'assets.poap.xyz',
+      // ... any other domains you're using
+    ],
   },
 }
 
