@@ -8,7 +8,6 @@ import {
   SiGithub,
   SiLinkedin,
   SiX,
-  SiFarcaster,
   SiPython,
   SiNodedotjs,
   SiGraphql,
@@ -19,7 +18,6 @@ import {
   SiWebassembly
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
-import { FaHammer, FaAws } from 'react-icons/fa';
 
 // Type definition for skill items
 interface SkillItem {
